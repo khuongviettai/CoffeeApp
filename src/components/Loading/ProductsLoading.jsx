@@ -1,0 +1,107 @@
+import React from 'react';
+import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
+import {SafeAreaView, ScrollView} from 'react-native';
+import {sizes, spacing} from '../../constants/theme';
+const ProductsLoading = () => {
+  return (
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <SafeAreaView>
+        <SkeletonPlaceholder>
+          <SkeletonPlaceholder.Item
+            width={'90%'}
+            justifyContent={'flex-start'}
+            marginLeft={'5%'}
+            height={280}
+            flexDirection={'row'}
+            flexWrap={'wrap'}
+            borderRadius={sizes.radius}>
+            <SkeletonPlaceholder.Item
+              width={65}
+              height={65}
+              borderRadius={65}
+              marginBottom={50}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              height={65}
+              marginLeft={spacing.l}
+              borderRadius={65}
+              marginBottom={50}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              marginLeft={spacing.l}
+              height={65}
+              borderRadius={65}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              marginLeft={spacing.l}
+              height={65}
+              borderRadius={65}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              height={65}
+              borderRadius={65}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              marginLeft={spacing.l}
+              height={65}
+              borderRadius={65}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              marginLeft={spacing.l}
+              height={65}
+              borderRadius={65}
+            />
+            <SkeletonPlaceholder.Item
+              width={65}
+              marginLeft={spacing.l}
+              height={65}
+              borderRadius={65}
+            />
+          </SkeletonPlaceholder.Item>
+          <SkeletonPlaceholder.Item
+            width={'90%'}
+            marginLeft={'5%'}
+            height={160}
+            borderRadius={sizes.radius}
+          />
+          <SkeletonPlaceholder.Item
+            width={'90%'}
+            marginLeft={'5%'}
+            height={160}
+            marginTop={40}
+            borderRadius={sizes.radius}
+          />
+          <SkeletonPlaceholder.Item
+            width={'90%'}
+            marginLeft={'5%'}
+            height={160}
+            marginTop={40}
+            borderRadius={sizes.radius}
+          />
+          <SkeletonPlaceholder.Item
+            width={'90%'}
+            marginLeft={'5%'}
+            height={160}
+            marginTop={40}
+            borderRadius={sizes.radius}
+          />
+          <SkeletonPlaceholder.Item
+            width={'90%'}
+            marginLeft={'5%'}
+            height={160}
+            marginTop={40}
+            borderRadius={sizes.radius}
+          />
+        </SkeletonPlaceholder>
+      </SafeAreaView>
+    </ScrollView>
+  );
+};
+
+export default ProductsLoading;
